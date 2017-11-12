@@ -1,0 +1,31 @@
+{
+    "name": "sackrin/wordpress-utils",
+    "type": "library",
+    "description": "Simple utility library for managing common WordPress tasks",
+    "keywords": ["wordpress"],
+    "license": "MIT",
+    "config": {
+        "preferred-install": "dist"
+    },
+    "authors": [
+        {
+            "name": "Hilary Osborne",
+            "email": "h.t.osborne@gmail.com",
+            "homepage": "https://www.hilaryosborne.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "anahkiasen/underscore-php" : "2.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Utils": "src"
+        },
+        "files": [
+            "src/Utils/Session/helpers.php",
+            "src/Utils/Theme/helpers.php"
+        ]
+    }
+}
