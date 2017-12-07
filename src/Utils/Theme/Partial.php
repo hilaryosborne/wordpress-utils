@@ -25,7 +25,7 @@ class Partial {
     $filepath = false;
     foreach ($this->supported as $k => $extension) {
       if ($filepath) { continue; }
-      $template_path = str_replace('.','/',$template_dir.$filename).$extension;
+      $template_path = $template_dir.str_replace('.','/',$filename).$extension;
       if (file_exists($template_path)) {
          $filepath = $template_path;
       }
